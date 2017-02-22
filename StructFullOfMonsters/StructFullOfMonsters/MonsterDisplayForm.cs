@@ -39,6 +39,7 @@ namespace StructFullOfMonsters
     public partial class MonsterDisplayForm : Form
     {
         private MonsterData[] monsters;
+        private int currentRecord = -1;
 
         public MonsterDisplayForm()
         {
@@ -56,6 +57,42 @@ namespace StructFullOfMonsters
         {
             MessageBox.Show("Currently unimplemented.\nUsing default values.");
             initDefaultData();
+        }
+
+        
+
+        private void buttonNextRecord_Click(object sender, EventArgs e)
+        {
+            if (currentRecord == -1)
+            {
+                MessageBox.Show("No records loaded");
+                return;
+            }
+            currentRecord++;
+            if (currentRecord >= monsters.Length)
+            {
+                currentRecord = monsters.Length - 1;
+                MessageBox.Show("At last record");
+            }
+            displayCurrentRecord();
+
+        }
+
+        private void buttonPrevRecord_Click(object sender, EventArgs e)
+        {
+            if (currentRecord == -1)
+            {
+                MessageBox.Show("No records loaded");
+                return;
+            }
+            currentRecord--;
+            if (currentRecord < 0)
+            {
+                currentRecord = 0;
+                MessageBox.Show("At first record");
+            }
+            displayCurrentRecord();
+
         }
 
         private void initDefaultData()
@@ -92,6 +129,24 @@ namespace StructFullOfMonsters
             monsters[0] = cia;
             monsters[1] = bane;
             monsters[2] = pavel;
+
+            currentRecord = 0;
+            displayCurrentRecord();
+        }
+
+        private void displayCurrentRecord()
+        {
+            MonsterData currentMonster = monsters[currentRecord];
+
+            textName.Text = currentMonster.name;
+            textDesc.Text = currentMonster.description;
+
+            // numerical values have to be converted to strings
+            textHP.Text = currentMonster.hp.ToString();
+            textAtk.Text = currentMonster.attack.ToString();
+            textDef.Text = currentMonster.defense.ToString();
+            textDmg.Text = "1-" + currentMonster.damageDie.ToString();
+
         }
     }
 }

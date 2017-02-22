@@ -93,6 +93,7 @@
             this.buttonNextRecord.TabIndex = 1;
             this.buttonNextRecord.Text = "Next";
             this.buttonNextRecord.UseVisualStyleBackColor = true;
+            this.buttonNextRecord.Click += new System.EventHandler(this.buttonNextRecord_Click);
             // 
             // buttonPrevRecord
             // 
@@ -102,6 +103,7 @@
             this.buttonPrevRecord.TabIndex = 0;
             this.buttonPrevRecord.Text = "Previous";
             this.buttonPrevRecord.UseVisualStyleBackColor = true;
+            this.buttonPrevRecord.Click += new System.EventHandler(this.buttonPrevRecord_Click);
             // 
             // groupBoxStatDisplay
             // 
@@ -128,6 +130,7 @@
             // 
             this.textDmg.Location = new System.Drawing.Point(125, 266);
             this.textDmg.Name = "textDmg";
+            this.textDmg.ReadOnly = true;
             this.textDmg.Size = new System.Drawing.Size(100, 20);
             this.textDmg.TabIndex = 11;
             // 
@@ -135,6 +138,7 @@
             // 
             this.textDef.Location = new System.Drawing.Point(125, 230);
             this.textDef.Name = "textDef";
+            this.textDef.ReadOnly = true;
             this.textDef.Size = new System.Drawing.Size(100, 20);
             this.textDef.TabIndex = 10;
             // 
