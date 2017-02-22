@@ -38,9 +38,60 @@ namespace StructFullOfMonsters
 
     public partial class MonsterDisplayForm : Form
     {
+        private MonsterData[] monsters;
+
         public MonsterDisplayForm()
         {
             InitializeComponent();
+        }
+
+        private void buttonLoadStaticData_Click(object sender, EventArgs e)
+        {
+            initDefaultData();
+            MessageBox.Show("Default data loaded");
+
+        }
+
+        private void buttonLoadRecords_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Currently unimplemented.\nUsing default values.");
+            initDefaultData();
+        }
+
+        private void initDefaultData()
+        {
+            // helper method
+            // for test purposes, create some monsters and init the array 'monsters'
+            monsters = new MonsterData[3];
+
+            // we'll create three MonsterData and add each to the array
+            MonsterData cia;
+            cia.name = "CIA";
+            cia.description = "Dr. Pavel, I'm CIA";
+            cia.hp = 10;
+            cia.attack = 3;    // added to a d20 roll
+            cia.defense = 10;  // default defense value
+            cia.damageDie = 6; // 1-6 damage
+
+            MonsterData bane;
+            bane.name = "Bane";
+            bane.description = "A big guy (for you)";
+            bane.hp = 20;
+            bane.attack = 5;
+            bane.defense = 15;
+            bane.damageDie = 8;
+
+            MonsterData pavel;
+            pavel.name = "Dr. Pavel";
+            pavel.description = "Nothing, I told them nothing";
+            pavel.hp = 5;
+            pavel.attack = 0;
+            pavel.defense = 10;
+            pavel.damageDie = 4;
+
+            monsters[0] = cia;
+            monsters[1] = bane;
+            monsters[2] = pavel;
         }
     }
 }

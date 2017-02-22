@@ -1,1 +1,10 @@
 D:\courses\courses\csc253\StructExample\StructFullOfMonsters\StructFullOfMonsters\bin\Debug\StructFullOfMonsters.exe.config
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\bin\Debug\StructFullOfMonsters.exe.config
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\bin\Debug\StructFullOfMonsters.exe
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\bin\Debug\StructFullOfMonsters.pdb
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.csprojResolveAssemblyReference.cache
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.MonsterDisplayForm.resources
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.Properties.Resources.resources
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.csproj.GenerateResource.Cache
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.exe
+C:\Users\norrisa\Source\Repos\CrateFullOfMonsters\StructFullOfMonsters\StructFullOfMonsters\obj\Debug\StructFullOfMonsters.pdb
